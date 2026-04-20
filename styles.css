@@ -311,6 +311,10 @@ p { margin: 0 0 1em; }
 }
 .phone:hover { border-bottom-color: #fff; }
 .contact .cta-row { justify-content: center; }
+.contact .btn--primary { background: var(--cta); color: #fff; }
+.contact .btn--primary:hover { background: var(--cta-deep); }
+.contact .btn--wa { background: var(--wa); color: #fff; }
+.contact .btn--tg { background: var(--tg); color: #fff; }
 
 /* ---------- Footer ---------- */
 .footer {
