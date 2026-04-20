@@ -1,32 +1,203 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Test Index</title>
-  <style>
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-      margin: 0;
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-      color: #fff;
-    }
-    main {
-      text-align: center;
-      padding: 2rem;
-    }
-    h1 { font-size: 3rem; margin: 0 0 0.5rem; }
-    p { font-size: 1.1rem; opacity: 0.9; }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Олеги — экскурсии из Батуми по Аджарии и Грузии</title>
+  <meta name="description" content="Индивидуальные и групповые экскурсии из Батуми по горной Аджарии, Грузии и Турции. Комфортный микроавтобус, русскоязычный гид Олеги.">
+  <meta property="og:title" content="Олеги — экскурсии из Батуми по Аджарии">
+  <meta property="og:description" content="Индивидуальные и групповые туры по горной Аджарии, Грузии и Турции.">
+  <meta property="og:image" content="https://myadjara.org/img/hero.jpg">
+  <meta property="og:url" content="https://myadjara.org/">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <main>
-    <h1>It works!</h1>
-    <p>Served by GitHub Pages.</p>
-  </main>
+
+<header class="header" id="header">
+  <div class="container header__inner">
+    <a href="#top" class="logo">
+      <span class="logo__mark">my</span><span class="logo__rest">Adjara</span>
+    </a>
+    <nav class="nav" id="nav">
+      <a href="#about">О гиде</a>
+      <a href="#tours">Туры</a>
+      <a href="#contact">Контакты</a>
+    </nav>
+    <a class="btn btn--call-sm" href="tel:+995593060302" aria-label="Позвонить">Позвонить</a>
+    <button class="burger" id="burger" aria-label="Меню" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="hero__bg" style="background-image: url('img/hero.jpg');"></div>
+  <div class="hero__overlay"></div>
+  <div class="container hero__content">
+    <h1 class="hero__title">Экскурсии из Батуми по горной Аджарии, Грузии и Турции</h1>
+    <p class="hero__subtitle">Индивидуальные и групповые туры · комфортный микроавтобус · гид Олеги</p>
+    <div class="cta-row">
+      <a class="btn btn--primary" href="tel:+995593060302" aria-label="Позвонить гиду">
+        <span class="btn__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.5.6.5 0 1 .4 1 1v3.5c0 .5-.4 1-1 1C10.4 21 3 13.6 3 4.5c0-.5.4-1 1-1h3.5c.5 0 1 .4 1 1 0 1.2.2 2.4.6 3.5.1.4 0 .7-.2 1l-2.3 2.2Z"/></svg>
+        </span>
+        Позвонить
+      </a>
+      <a class="btn btn--wa" href="https://wa.me/995593060302" target="_blank" rel="noopener" aria-label="Написать в WhatsApp">
+        <span class="btn__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-1.9-.9-.3-.1-.5-.1-.7.2-.2.3-.8.9-1 1.1-.2.2-.4.2-.7.1-.3-.1-1.3-.5-2.5-1.5-.9-.8-1.5-1.9-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5 0 1.5 1.1 2.9 1.2 3.1.1.2 2.1 3.2 5.1 4.5 1.7.7 2.4.8 3.2.7.5-.1 1.6-.6 1.8-1.3.2-.7.2-1.2.2-1.3-.1-.1-.3-.2-.6-.3ZM12 2C6.5 2 2 6.5 2 12c0 1.9.5 3.7 1.5 5.3L2 22l4.8-1.5c1.5.9 3.3 1.4 5.2 1.4 5.5 0 10-4.5 10-10S17.5 2 12 2Z"/></svg>
+        </span>
+        WhatsApp
+      </a>
+      <a class="btn btn--tg" href="https://t.me/+995593060302" target="_blank" rel="noopener" aria-label="Написать в Telegram">
+        <span class="btn__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M21.7 3.3 2.9 10.6c-1 .4-1 1 .1 1.3l4.7 1.5 1.8 5.8c.2.6.1.9.7.9.5 0 .7-.2 1-.5l2.3-2.2 4.9 3.6c.9.5 1.5.2 1.7-.8l3.2-14.7c.3-1.3-.4-1.8-1.6-1.2Z"/></svg>
+        </span>
+        Telegram
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="container about__grid">
+    <div class="about__photo">
+      <img src="img/olegi.jpeg" alt="Гид Олеги" loading="lazy">
+    </div>
+    <div class="about__text">
+      <h2>Меня зовут Олеги</h2>
+      <p>Я живу в Аджарии и уже много лет вожу гостей по любимым местам этого края. Вы едете со мной на комфортном микроавтобусе — удобно и для семьи, и для компании до 7–8 человек.</p>
+      <p>Я сам составляю маршрут под ваши интересы и темп: можем успеть за день главные водопады и крепости, а можем уехать в горы на целый день и не встретить никого, кроме пастухов и ручьёв.</p>
+      <ul class="features">
+        <li><strong>Микроавтобус</strong><span>Комфортный, с кондиционером</span></li>
+        <li><strong>Русскоязычный гид</strong><span>Без переводчиков и сюрпризов</span></li>
+        <li><strong>Индивидуально и группой</strong><span>Маршрут подстраиваем под вас</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<main id="tours">
+
+  <section class="tours" id="classic">
+    <div class="container">
+      <h2 class="section-title">Аджария — классика</h2>
+      <p class="section-lead">Главные маршруты вокруг Батуми, которые стоит увидеть в первую очередь.</p>
+      <div class="grid">
+        <article class="card"><img src="img/mahuntseti.jpg" alt="Махунцетский водопад" loading="lazy"><h3>Махунцетский водопад</h3></article>
+        <article class="card"><img src="img/tamara-bridge.jpg" alt="Мост царицы Тамары" loading="lazy"><h3>Мост царицы Тамары</h3></article>
+        <article class="card"><img src="img/wine-house.jpg" alt="Аджарский винный дом" loading="lazy"><h3>Винный дом</h3></article>
+        <article class="card"><img src="img/mirveti.jpg" alt="Мирветский водопад" loading="lazy"><h3>Мирветский водопад</h3></article>
+        <article class="card card--placeholder" data-letter="П"><h3>Подвесной мост</h3></article>
+        <article class="card"><img src="img/machakhela.jpg" alt="Мачахела — национальный парк" loading="lazy"><h3>Мачахела — фольклор</h3></article>
+        <article class="card card--placeholder" data-letter="С"><h3>Слияние двух рек</h3><p class="card__sub">Мачахела и Аджарисцкали</p></article>
+        <article class="card"><img src="img/gonio.jpg" alt="Крепость Гонио" loading="lazy"><h3>Старая крепость Гонио</h3></article>
+        <article class="card"><img src="img/sarpi-waterfall.jpg" alt="Водопад Андрея Первозванного в Сарпи" loading="lazy"><h3>Водопад Андрея Первозванного</h3><p class="card__sub">Сарпи</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="tours tours--alt" id="nature">
+    <div class="container">
+      <h2 class="section-title">Природа Аджарии</h2>
+      <p class="section-lead">Для тех, кому важен свежий воздух, лес и море вне туристической суеты.</p>
+      <div class="grid">
+        <article class="card"><img src="img/mtirala.jpg" alt="Национальный парк Мтирала" loading="lazy"><h3>Национальный парк Мтирала</h3></article>
+        <article class="card"><img src="img/botanical-garden.jpg" alt="Батумский ботанический сад" loading="lazy"><h3>Ботанический сад</h3></article>
+        <article class="card"><img src="img/petra-fortress.jpg" alt="Крепость Петра" loading="lazy"><h3>Крепость Петра</h3></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="tours" id="kobuleti">
+    <div class="container">
+      <h2 class="section-title">Кобулети и окрестности</h2>
+      <p class="section-lead">Черноморское побережье, магнитные пески и парки под соснами.</p>
+      <div class="grid">
+        <article class="card card--placeholder" data-letter="Д"><h3>Дендрологический парк</h3><p class="card__sub">Шекветили</p></article>
+        <article class="card"><img src="img/ureki.jpg" alt="Магнитные пески Уреки" loading="lazy"><h3>Магнитные пески</h3><p class="card__sub">Уреки</p></article>
+        <article class="card card--placeholder" data-letter="М"><h3>Музыкальный парк</h3><p class="card__sub">Шекветили</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="tours tours--alt" id="georgia">
+    <div class="container">
+      <h2 class="section-title">Западная Грузия</h2>
+      <p class="section-lead">Однодневные выезды за пределы Аджарии к каньонам, пещерам и источникам.</p>
+      <div class="grid">
+        <article class="card"><img src="img/martvili.jpg" alt="Мартвильский каньон" loading="lazy"><h3>Мартвильский каньон</h3></article>
+        <article class="card"><img src="img/prometheus-cave.jpg" alt="Пещера Прометея" loading="lazy"><h3>Пещера Прометея</h3></article>
+        <article class="card card--placeholder" data-letter="Г"><h3>Горячие источники</h3></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="tours" id="mountains">
+    <div class="container">
+      <h2 class="section-title">Горы и курорты</h2>
+      <p class="section-lead">Высокогорье и минеральные воды — для двух-трёхдневных выездов.</p>
+      <div class="grid">
+        <article class="card"><img src="img/gomis-mta.jpg" alt="Гомис-Мта" loading="lazy"><h3>Гомис-Мта</h3></article>
+        <article class="card"><img src="img/sairme.jpg" alt="Курорт Саирме" loading="lazy"><h3>Саирме</h3></article>
+        <article class="card"><img src="img/borjomi.jpg" alt="Боржоми" loading="lazy"><h3>Боржоми</h3></article>
+        <article class="card"><img src="img/bakhmaro.jpg" alt="Бахмаро" loading="lazy"><h3>Бахмаро</h3></article>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<section class="contact" id="contact">
+  <div class="contact__bg" style="background-image: url('img/batumi.jpg');"></div>
+  <div class="contact__overlay"></div>
+  <div class="container contact__content">
+    <h2>Напишите, чтобы спланировать поездку</h2>
+    <p>Расскажу про маршруты, подберу удобные даты и посчитаю стоимость под вашу компанию.</p>
+    <a class="phone" href="tel:+995593060302">+995 593 06 03 02</a>
+    <div class="cta-row">
+      <a class="btn btn--primary" href="tel:+995593060302" aria-label="Позвонить">
+        <span class="btn__icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.5.6.5 0 1 .4 1 1v3.5c0 .5-.4 1-1 1C10.4 21 3 13.6 3 4.5c0-.5.4-1 1-1h3.5c.5 0 1 .4 1 1 0 1.2.2 2.4.6 3.5.1.4 0 .7-.2 1l-2.3 2.2Z"/></svg></span>
+        Позвонить
+      </a>
+      <a class="btn btn--wa" href="https://wa.me/995593060302" target="_blank" rel="noopener" aria-label="WhatsApp">
+        <span class="btn__icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-1.9-.9-.3-.1-.5-.1-.7.2-.2.3-.8.9-1 1.1-.2.2-.4.2-.7.1-.3-.1-1.3-.5-2.5-1.5-.9-.8-1.5-1.9-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5 0 1.5 1.1 2.9 1.2 3.1.1.2 2.1 3.2 5.1 4.5 1.7.7 2.4.8 3.2.7.5-.1 1.6-.6 1.8-1.3.2-.7.2-1.2.2-1.3-.1-.1-.3-.2-.6-.3ZM12 2C6.5 2 2 6.5 2 12c0 1.9.5 3.7 1.5 5.3L2 22l4.8-1.5c1.5.9 3.3 1.4 5.2 1.4 5.5 0 10-4.5 10-10S17.5 2 12 2Z"/></svg></span>
+        WhatsApp
+      </a>
+      <a class="btn btn--tg" href="https://t.me/+995593060302" target="_blank" rel="noopener" aria-label="Telegram">
+        <span class="btn__icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M21.7 3.3 2.9 10.6c-1 .4-1 1 .1 1.3l4.7 1.5 1.8 5.8c.2.6.1.9.7.9.5 0 .7-.2 1-.5l2.3-2.2 4.9 3.6c.9.5 1.5.2 1.7-.8l3.2-14.7c.3-1.3-.4-1.8-1.6-1.2Z"/></svg></span>
+        Telegram
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <span>© 2026 Олеги · myadjara.org</span>
+    <span>Батуми, Аджария</span>
+  </div>
+</footer>
+
+<script>
+  const header = document.getElementById('header');
+  const burger = document.getElementById('burger');
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => {
+    header.classList.toggle('is-scrolled', window.scrollY > 40);
+  });
+  burger.addEventListener('click', () => {
+    const open = nav.classList.toggle('is-open');
+    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  nav.addEventListener('click', (e) => {
+    if (e.target.tagName === 'A') {
+      nav.classList.remove('is-open');
+      burger.setAttribute('aria-expanded', 'false');
+    }
+  });
+</script>
+
 </body>
 </html>
