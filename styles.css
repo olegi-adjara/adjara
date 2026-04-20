@@ -119,8 +119,18 @@ p { margin: 0 0 1em; }
 .hero__subtitle {
   font-size: clamp(16px, 2vw, 20px);
   color: rgba(255,255,255,.92);
-  margin-bottom: 32px;
+  margin-bottom: 10px;
   max-width: 640px;
+}
+.hero__tagline {
+  display: inline-block;
+  font-size: clamp(14px, 1.5vw, 16px);
+  font-weight: 500;
+  color: #fff;
+  background: rgba(192,88,59,.9);
+  padding: 6px 14px;
+  border-radius: 999px;
+  margin-bottom: 32px;
 }
 
 /* ---------- CTA row & buttons ---------- */
