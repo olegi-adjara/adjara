@@ -123,14 +123,15 @@ p { margin: 0 0 1em; }
   max-width: 640px;
 }
 .hero__tagline {
-  display: inline-block;
+  display: block;
+  width: fit-content;
   font-size: clamp(14px, 1.5vw, 16px);
   font-weight: 500;
   color: #fff;
   background: rgba(192,88,59,.9);
   padding: 6px 14px;
   border-radius: 999px;
-  margin-bottom: 32px;
+  margin: 0 auto 32px;
 }
 
 /* ---------- CTA row & buttons ---------- */
