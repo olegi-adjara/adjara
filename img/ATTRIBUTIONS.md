@@ -12,12 +12,10 @@ All photos in this folder (except `olegi.jpeg`) are sourced from Wikimedia Commo
 | mirveti.jpg | [Mirveti bridge](https://commons.wikimedia.org/wiki/File:Mirveti_bridge.jpg) |
 | machakhela.jpg | [Machakhela National Park](https://commons.wikimedia.org/wiki/File:Machakhela_National_Park_2023-09-01-3.jpg) |
 | gonio.jpg | [Gonio Castle](https://commons.wikimedia.org/wiki/File:Gonio_Castle.jpg) |
-| sarpi.jpg | [Sarpi, Georgia-Turkish Border](https://commons.wikimedia.org/wiki/File:Sarpi,_Georgia-Turkish_Border_(29288584665).jpg) |
 | sarpi-waterfall.jpg | [Waterfall in Sarfi (Adjara region)](https://commons.wikimedia.org/wiki/File:Waterfall_in_Sarfi_(Adjara_region._Georgia).jpg) |
 | mtirala.jpg | [Mtirala5](https://commons.wikimedia.org/wiki/File:Mtirala5.jpg) |
 | botanical-garden.jpg | [Батумский ботанический сад](https://commons.wikimedia.org/wiki/File:Эвкалиптовая_роща_в_Батумском_ботаническом_саду.jpg) |
 | petra-fortress.jpg | [Petra-Tsikhisdziri](https://commons.wikimedia.org/wiki/File:Petra-cixisdziri_(3).JPG) |
-| shekvetili.jpg | [Shekvetili fort (Dubois de Montpereux)](https://commons.wikimedia.org/wiki/File:Fridrich_Dubois_de_Montpereux._Shekvetili_fort.jpg) |
 | ureki.jpg | [Ureki](https://commons.wikimedia.org/wiki/File:Ureki.jpg) |
 | martvili.jpg | [Martvili Canyon](https://commons.wikimedia.org/wiki/File:Martvili_Canyon,_Georgia._2018_(11).jpg) |
 | prometheus-cave.jpg | [Kumistavi Cave](https://commons.wikimedia.org/wiki/File:Kumistavi_Cave_-_uphill_view.jpg) |
