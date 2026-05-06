@@ -177,25 +177,6 @@ p { margin: 0 0 1em; }
   box-shadow: var(--shadow-md);
 }
 .about__text h2 { font-size: clamp(26px, 3vw, 38px); color: var(--accent-deep); }
-.about__video {
-  margin: 24px 0 0;
-  max-width: 280px;
-}
-.about__video video {
-  display: block;
-  width: 100%;
-  aspect-ratio: 9 / 16;
-  object-fit: cover;
-  border-radius: var(--radius);
-  background: #000;
-  box-shadow: var(--shadow-md);
-}
-.about__video figcaption {
-  margin-top: 8px;
-  font-size: 13px;
-  color: var(--ink-muted);
-  font-style: italic;
-}
 .features {
   list-style: none; padding: 0; margin: 24px 0 0;
   display: grid; gap: 14px;
@@ -210,6 +191,26 @@ p { margin: 0 0 1em; }
 }
 .features strong { color: var(--accent-deep); font-size: 15px; }
 .features span { color: var(--ink-muted); font-size: 14px; }
+
+/* ---------- Atmosphere ---------- */
+.atmosphere {
+  padding: 72px 0;
+  background: var(--surface);
+  border-bottom: 1px solid var(--line);
+}
+.atmosphere__video {
+  margin: 24px auto 0;
+  max-width: 320px;
+}
+.atmosphere__video video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 9 / 16;
+  object-fit: cover;
+  border-radius: var(--radius);
+  background: #000;
+  box-shadow: var(--shadow-md);
+}
 
 /* ---------- Tour sections ---------- */
 .tours {
@@ -364,9 +365,8 @@ p { margin: 0 0 1em; }
     gap: 28px;
   }
   .about__photo { max-width: 320px; }
-  .about__video { margin: 24px auto 0; }
-  .about__video figcaption { text-align: center; }
   .tours, .about { padding: 64px 0; }
+  .atmosphere { padding: 56px 0; }
 }
 
 @media (max-width: 720px) {
