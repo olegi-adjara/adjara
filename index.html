@@ -10,7 +10,7 @@
   <meta property="og:image" content="https://myadjara.org/img/hero.jpg">
   <meta property="og:url" content="https://myadjara.org/">
   <meta property="og:type" content="website">
-  <link rel="stylesheet" href="styles.css?v=9">
+  <link rel="stylesheet" href="styles.css?v=10">
   <!-- Yandex.Metrika counter -->
   <script type="text/javascript">
     (function(m,e,t,r,i,k,a){
@@ -200,9 +200,19 @@
 <footer class="footer">
   <div class="container footer__inner">
     <span>© 2026 Олеги · myadjara.org</span>
+    <a href="privacy.html">Политика конфиденциальности</a>
     <span>Батуми, Аджария</span>
   </div>
 </footer>
+
+<div class="cookie" id="cookie" hidden>
+  <div class="container cookie__inner">
+    <p class="cookie__text">
+      Мы используем Яндекс Метрику для анализа посещаемости сайта. Метрика может использовать cookie и собирать технические данные о посещении. Продолжая пользоваться сайтом, вы соглашаетесь с обработкой данных в соответствии с <a href="privacy.html">Политикой конфиденциальности</a>.
+    </p>
+    <button class="btn btn--primary cookie__btn" id="cookieOk" type="button">Понятно</button>
+  </div>
+</div>
 
 <script>
   const header = document.getElementById('header');
@@ -229,6 +239,18 @@
     if (href.startsWith('tel:')) ym(109086938, 'reachGoal', 'call');
     else if (href.includes('wa.me')) ym(109086938, 'reachGoal', 'whatsapp');
     else if (href.includes('t.me')) ym(109086938, 'reachGoal', 'telegram');
+  });
+
+  const cookie = document.getElementById('cookie');
+  const cookieOk = document.getElementById('cookieOk');
+  if (cookie && !localStorage.getItem('cookieAck')) {
+    cookie.hidden = false;
+    requestAnimationFrame(() => cookie.classList.add('is-visible'));
+  }
+  cookieOk?.addEventListener('click', () => {
+    localStorage.setItem('cookieAck', '1');
+    cookie.classList.remove('is-visible');
+    setTimeout(() => { cookie.hidden = true; }, 250);
   });
 </script>
 

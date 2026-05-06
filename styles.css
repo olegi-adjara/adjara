@@ -355,6 +355,99 @@ p { margin: 0 0 1em; }
 .footer__inner {
   display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px;
 }
+.footer a {
+  color: rgba(255,255,255,.85);
+  border-bottom: 1px solid rgba(255,255,255,.25);
+  transition: color .15s ease, border-color .15s ease;
+}
+.footer a:hover { color: #fff; border-bottom-color: #fff; }
+
+/* ---------- Legal page ---------- */
+.legal {
+  padding-top: calc(var(--header-h) + 40px);
+  padding-bottom: 60px;
+  background: var(--surface);
+  min-height: calc(100vh - var(--header-h));
+}
+.legal__inner {
+  max-width: 760px;
+}
+.legal h1 {
+  font-size: clamp(28px, 3.5vw, 38px);
+  color: var(--accent-deep);
+  margin-bottom: 8px;
+}
+.legal__meta {
+  color: var(--ink-muted);
+  font-size: 14px;
+  margin-bottom: 32px;
+}
+.legal h2 {
+  font-size: 20px;
+  color: var(--accent-deep);
+  margin-top: 32px;
+  margin-bottom: 10px;
+}
+.legal p, .legal li { color: var(--ink); font-size: 16px; line-height: 1.65; }
+.legal ul { padding-left: 22px; margin: 0 0 1em; }
+.legal li { margin-bottom: 6px; }
+.legal a {
+  color: var(--accent);
+  border-bottom: 1px solid rgba(45,74,43,.3);
+  transition: border-color .15s ease;
+}
+.legal a:hover { border-bottom-color: var(--accent); }
+.legal code {
+  background: var(--bg);
+  padding: 1px 6px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+}
+.legal__back {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid var(--line);
+}
+
+/* ---------- Cookie banner ---------- */
+.cookie {
+  position: fixed; left: 0; right: 0; bottom: 0;
+  z-index: 60;
+  background: rgba(30, 52, 32, .97);
+  color: #fff;
+  box-shadow: 0 -4px 20px rgba(0,0,0,.2);
+  transform: translateY(100%);
+  opacity: 0;
+  transition: transform .25s ease, opacity .25s ease;
+}
+.cookie.is-visible { transform: translateY(0); opacity: 1; }
+.cookie__inner {
+  display: flex; align-items: center; gap: 20px;
+  padding: 16px 20px;
+}
+.cookie__text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+  color: rgba(255,255,255,.92);
+  flex: 1;
+}
+.cookie__text a {
+  color: #fff;
+  border-bottom: 1px solid rgba(255,255,255,.5);
+}
+.cookie__text a:hover { border-bottom-color: #fff; }
+.cookie__btn {
+  flex-shrink: 0;
+  padding: 10px 22px;
+  font-size: 14px;
+}
+@media (max-width: 720px) {
+  .cookie__inner { flex-direction: column; align-items: stretch; gap: 12px; padding: 14px 16px; }
+  .cookie__text { font-size: 13px; }
+  .cookie__btn { width: 100%; justify-content: center; }
+}
 
 /* ---------- Responsive ---------- */
 @media (max-width: 900px) {
