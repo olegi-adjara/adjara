@@ -369,6 +369,7 @@ p { margin: 0 0 1em; }
 
 @media (max-width: 720px) {
   .header__inner { gap: 12px; }
+  .logo { font-size: 17px; }
   .btn--call-sm { display: none; }
   .nav {
     position: absolute; top: var(--header-h); left: 0; right: 0;
