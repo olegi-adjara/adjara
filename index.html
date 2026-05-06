@@ -205,6 +205,7 @@
   </div>
 </footer>
 
+<!-- Cookie banner — temporarily disabled, keep markup for later
 <div class="cookie" id="cookie" hidden>
   <div class="container cookie__inner">
     <p class="cookie__text">
@@ -213,6 +214,7 @@
     <button class="btn btn--primary cookie__btn" id="cookieOk" type="button">Понятно</button>
   </div>
 </div>
+-->
 
 <script>
   const header = document.getElementById('header');
@@ -241,6 +243,7 @@
     else if (href.includes('t.me')) ym(109086938, 'reachGoal', 'telegram');
   });
 
+  /* Cookie banner — temporarily disabled, keep for later
   const cookie = document.getElementById('cookie');
   const cookieOk = document.getElementById('cookieOk');
   if (cookie && !localStorage.getItem('cookieAck')) {
@@ -252,6 +255,7 @@
     cookie.classList.remove('is-visible');
     setTimeout(() => { cookie.hidden = true; }, 250);
   });
+  */
 </script>
 
 </body>
