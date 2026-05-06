@@ -209,6 +209,15 @@
       burger.setAttribute('aria-expanded', 'false');
     }
   });
+
+  document.addEventListener('click', (e) => {
+    const a = e.target.closest('a[href]');
+    if (!a || typeof ym !== 'function') return;
+    const href = a.getAttribute('href');
+    if (href.startsWith('tel:')) ym(109086938, 'reachGoal', 'call');
+    else if (href.includes('wa.me')) ym(109086938, 'reachGoal', 'whatsapp');
+    else if (href.includes('t.me')) ym(109086938, 'reachGoal', 'telegram');
+  });
 </script>
 
 </body>
