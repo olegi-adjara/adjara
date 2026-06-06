@@ -24,6 +24,6 @@ All photos in this folder (except `olegi.jpeg`) are sourced from Wikimedia Commo
 | bakhmaro.jpg | [Bakhmaro](https://commons.wikimedia.org/wiki/File:ბახმაროს_საერთო_ხედი.jpg) |
 | gomis-mta.jpg | [Gomismta resort area](https://commons.wikimedia.org/wiki/File:Gomismta_resort_area,_Guria_region,_Georgia.jpg) |
 
-`olegi.jpeg` — personal photo of the guide, rights reserved by Олеги.
+`olegi.jpeg` — personal photo of the guide, rights reserved by Олег.
 
 For exact license terms and authors, see each file's page on Wikimedia Commons.
