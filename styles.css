@@ -205,17 +205,26 @@ p { margin: 0 0 1em; }
   border-bottom: 1px solid var(--line);
 }
 .atmosphere__video {
-  margin: 24px auto 0;
-  max-width: 320px;
+  margin: 32px auto 0;
 }
+.atmosphere__video--portrait { max-width: 320px; }
+.atmosphere__video--landscape { max-width: 720px; }
 .atmosphere__video video {
   display: block;
   width: 100%;
-  aspect-ratio: 9 / 16;
   object-fit: cover;
   border-radius: var(--radius);
   background: #000;
   box-shadow: var(--shadow-md);
+}
+.atmosphere__video--portrait video { aspect-ratio: 9 / 16; }
+.atmosphere__video--landscape video { aspect-ratio: 16 / 9; }
+.atmosphere__video figcaption {
+  margin: 14px auto 0;
+  color: var(--ink-muted);
+  font-size: 15px;
+  text-align: center;
+  max-width: 560px;
 }
 
 /* ---------- Tour sections ---------- */
