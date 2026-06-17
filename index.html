@@ -10,7 +10,7 @@
   <meta property="og:image" content="https://myadjara.org/img/hero.jpg">
   <meta property="og:url" content="https://myadjara.org/">
   <meta property="og:type" content="website">
-  <link rel="stylesheet" href="styles.css?v=14">
+  <link rel="stylesheet" href="styles.css?v=15">
   <!-- Yandex.Metrika counter -->
   <script type="text/javascript">
     (function(m,e,t,r,i,k,a){
@@ -77,8 +77,11 @@
 <section class="about" id="about">
   <div class="container about__grid">
     <div class="about__photo">
-      <img src="img/olegi.jpeg" alt="Гид Олег" loading="lazy">
-      <img src="img/oleg2.jpg" alt="Олег на маршруте в Аджарии" loading="lazy">
+      <div class="slider" id="aboutSlider">
+        <img src="img/olegi.jpeg" alt="Гид Олег" loading="lazy">
+        <img src="img/oleg2.jpg" alt="Олег на маршруте в Аджарии" loading="lazy">
+      </div>
+      <div class="slider__dots" id="aboutDots" aria-hidden="true"></div>
     </div>
     <div class="about__text">
       <h2>Меня зовут Олег</h2>
@@ -299,6 +302,31 @@
     else if (href.includes('wa.me')) ym(109086938, 'reachGoal', 'whatsapp');
     else if (href.includes('t.me')) ym(109086938, 'reachGoal', 'telegram');
   });
+
+  (function initSlider(slider, dotsBox) {
+    if (!slider || !dotsBox) return;
+    const slides = slider.querySelectorAll('img');
+    if (slides.length < 2) return;
+    const dots = Array.from(slides).map((_, i) => {
+      const b = document.createElement('button');
+      b.type = 'button';
+      b.setAttribute('aria-label', 'Слайд ' + (i + 1));
+      if (i === 0) b.classList.add('is-active');
+      b.addEventListener('click', () => {
+        slider.scrollTo({ left: i * slider.clientWidth, behavior: 'smooth' });
+      });
+      dotsBox.appendChild(b);
+      return b;
+    });
+    let raf;
+    slider.addEventListener('scroll', () => {
+      cancelAnimationFrame(raf);
+      raf = requestAnimationFrame(() => {
+        const i = Math.round(slider.scrollLeft / slider.clientWidth);
+        dots.forEach((d, idx) => d.classList.toggle('is-active', idx === i));
+      });
+    }, { passive: true });
+  })(document.getElementById('aboutSlider'), document.getElementById('aboutDots'));
 
   /* Cookie banner — temporarily disabled, keep for later
   const cookie = document.getElementById('cookie');
