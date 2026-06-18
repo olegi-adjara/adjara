@@ -377,65 +377,16 @@ p { margin: 0 0 1em; }
   background: var(--bg);
   border-bottom: 1px solid var(--line);
 }
-.prices__grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 24px;
-  margin-top: 24px;
-}
-.price-card {
-  background: var(--surface);
-  border-radius: var(--radius);
-  padding: 28px 28px 24px;
-  box-shadow: var(--shadow-sm);
-  border-top: 4px solid var(--accent);
-}
-.price-card__title {
-  font-size: 20px;
-  color: var(--accent-deep);
-  margin: 0 0 18px;
-}
-.price-card__list {
-  list-style: none;
-  padding: 0; margin: 0;
-  display: grid;
-  gap: 18px;
-}
-.price-card__list li {
-  display: grid;
-  gap: 4px;
-  padding-bottom: 18px;
-  border-bottom: 1px solid var(--line);
-}
-.price-card__list li:last-child {
-  padding-bottom: 0;
-  border-bottom: 0;
-}
-.price-card__label {
+.prices__note {
+  font-size: clamp(17px, 2vw, 19px);
   color: var(--ink);
-  font-size: 15px;
-}
-.price-card__label em {
-  font-style: normal;
-  color: var(--ink-muted);
-  font-size: 13px;
-  margin-left: 4px;
-}
-.price-card__amount {
-  font-size: 22px;
-  font-weight: 700;
-  color: var(--cta);
-  letter-spacing: -.01em;
-}
-.price-card__note {
-  font-size: 13px;
-  color: var(--ink-muted);
+  max-width: 640px;
+  margin: 16px 0 0;
+  line-height: 1.5;
 }
 
 @media (max-width: 720px) {
   .prices { padding: 64px 0; }
-  .prices__grid { grid-template-columns: 1fr; }
-  .price-card { padding: 22px 22px 18px; }
 }
 
 /* ---------- Contact ---------- */
