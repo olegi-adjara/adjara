@@ -602,10 +602,16 @@ p { margin: 0 0 1em; }
     box-shadow: var(--shadow-md);
     transform: translateY(-10px);
     opacity: 0; pointer-events: none;
-    transition: opacity .2s ease, transform .2s ease;
+    visibility: hidden;
+    transition: opacity .2s ease, transform .2s ease, visibility 0s .2s;
     color: var(--ink);
   }
-  .nav.is-open { opacity: 1; pointer-events: auto; transform: translateY(0); }
+  .nav.is-open {
+    opacity: 1; pointer-events: auto;
+    transform: translateY(0);
+    visibility: visible;
+    transition: opacity .2s ease, transform .2s ease;
+  }
   .nav a { color: var(--ink); font-size: 17px; }
   .nav__item { display: block; }
   .nav__item--has-sub > a::after { display: none; }
