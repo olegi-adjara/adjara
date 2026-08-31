@@ -10,7 +10,7 @@
   <meta property="og:image" content="https://myadjara.org/img/hero.jpg">
   <meta property="og:url" content="https://myadjara.org/">
   <meta property="og:type" content="website">
-  <link rel="stylesheet" href="styles.css?v=21">
+  <link rel="stylesheet" href="styles.css?v=22">
   <!-- Yandex.Metrika counter -->
   <script type="text/javascript">
     (function(m,e,t,r,i,k,a){
@@ -255,10 +255,24 @@
 </section>
 
 <section class="prices" id="prices">
-  <div class="container">
-    <h2 class="section-title">Цены</h2>
-    <p class="prices__note">Ущелье Мачахела с застольем — 40 $ (105 лари) с человека.</p>
-    <p class="prices__note">Остальные туры — по договорённости. Точную сумму считаем под ваш маршрут и количество мест.</p>
+  <div class="container prices__grid">
+    <div class="prices__text">
+      <h2 class="section-title">Цены</h2>
+      <p class="prices__note">Ущелье Мачахела с застольем — 40 $ (105 лари) с человека.</p>
+      <p class="prices__note">Остальные туры — по договорённости. Точную сумму считаем под ваш маршрут и количество мест.</p>
+    </div>
+    <div class="prices__photo">
+      <div class="slider" id="pricesSlider">
+        <img src="img/o1.jpeg" alt="Фото из поездки" loading="lazy">
+        <img src="img/o2.jpeg" alt="Фото из поездки" loading="lazy">
+        <img src="img/o3.jpeg" alt="Фото из поездки" loading="lazy">
+        <img src="img/o4.jpeg" alt="Фото из поездки" loading="lazy">
+        <img src="img/o5.jpeg" alt="Фото из поездки" loading="lazy">
+        <img src="img/o6.jpeg" alt="Фото из поездки" loading="lazy">
+        <img src="img/o7.jpeg" alt="Фото из поездки" loading="lazy">
+      </div>
+      <div class="slider__dots" id="pricesDots" aria-hidden="true"></div>
+    </div>
   </div>
 </section>
 
@@ -332,7 +346,7 @@
     else if (href.includes('t.me')) ym(109086938, 'reachGoal', 'telegram');
   });
 
-  (function initSlider(slider, dotsBox) {
+  function initSlider(slider, dotsBox) {
     if (!slider || !dotsBox) return;
     const slides = slider.querySelectorAll('img');
     if (slides.length < 2) return;
@@ -355,7 +369,9 @@
         dots.forEach((d, idx) => d.classList.toggle('is-active', idx === i));
       });
     }, { passive: true });
-  })(document.getElementById('aboutSlider'), document.getElementById('aboutDots'));
+  }
+  initSlider(document.getElementById('aboutSlider'), document.getElementById('aboutDots'));
+  initSlider(document.getElementById('pricesSlider'), document.getElementById('pricesDots'));
 
   /* Cookie banner — temporarily disabled, keep for later
   const cookie = document.getElementById('cookie');
