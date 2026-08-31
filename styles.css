@@ -261,6 +261,7 @@ p { margin: 0 0 1em; }
   margin: 28px 0 0;
 }
 .atmosphere__row--three { grid-template-columns: repeat(3, 1fr); }
+.atmosphere__row--four { grid-template-columns: repeat(4, 1fr); }
 .atmosphere__clip { margin: 0; }
 .atmosphere__clip video {
   display: block;
