@@ -256,10 +256,11 @@ p { margin: 0 0 1em; }
 
 .atmosphere__row {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 20px;
   margin: 28px 0 0;
 }
+.atmosphere__row--three { grid-template-columns: repeat(3, 1fr); }
 .atmosphere__clip { margin: 0; }
 .atmosphere__clip video {
   display: block;
